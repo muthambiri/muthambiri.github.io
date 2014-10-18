@@ -29,13 +29,13 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  color:##EC2377;
+  color:#EC2377;
 }
 
 a {
-  color:##EC2377;;
+  color:#EC2377;;
   font-size:18px;
-  font-weight:400;
+  font-weight:bold;
   text-decoration:none;
 }
 
