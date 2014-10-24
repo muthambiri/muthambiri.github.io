@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Muthambiri Notes - editors</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Muthambiri's Notes - A Girl's Guide to;</h1>
+        <p>Moving from Supporting Platforms to Building them </p>
+
+
+        <p class="view"><a href="/index.html">Home Page </a></p>
+
+      </header>
+      <section>
+        <h1>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Debian Wheezy - Setting up Oh-My_Zsh </h1>
+
+<p>Iam currently running Google Cloud Services just for testing and learning purposes which I got for free. Today I deployed Lamp Stack on Linux featuring Apache, MySQL, and PHP </p>
+<p> Iam thinking of Hosting a Wordpress a blog on that server maybe later in the next few months .</p>
+Since the server runs Debian Wheezy and ofcourse no GUI interface means having to SSH into that server all the time. 
+<p>In come's Oh-My-Zsh! I simply love Zsh compared to Bash terminals! I have this running on my Ubuntu and Mac Terminals and I thought it would be a walk in the park to have it up on this server which was not so straight forward really</p>
+<p> This is what got me saying Oh My Zhs </p>
+<p> Installing Zsh on Debian </p>
+<pre><code>$ sudo apt-get update -y </code>
+  <code>$ sudo apt-get install -y zsh
+</code></pre>
+<p>Trying to run Oh-My-Zsh from Robby Russel's Git threw in some errors that Debian didnt have any Git Installed</p>
+<p> I Installed Git <p/>
+
+<pre><code> $ sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential</code>
+<code> $ wget https://github.com/git/git/archive/v1.9.4.tar.gz </code>
+</pre>
+<p>After it downloads, untar the file and switch into that directory: </p>
+<pre><code>
+$ tar -zxf v1.9.4.tar.gz
+$ cd git-1.9.4
+$ make prefix=/usr/local all
+</code>
+</pre>
+
+<p> Setting up Git, The Git config file does not exist and I had to create one </p>
+<pre><code>
+ $ vim ~/.gitconfig
+ [user]
+ name = "my git username"
+ email = "my git email address "
+ </pre></code> 
+<p> This shows the configurations done </p>
+<pre><code>
+git config --list
+</pre></code>
+
+</p>
+   <br>
+   <br>
+      <footer>
+        <p><small>Muthambiri 2014</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
