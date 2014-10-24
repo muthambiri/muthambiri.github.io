@@ -61,7 +61,13 @@ $ make prefix=/usr/local all
 <pre><code>
 git config --list
 </pre></code>
-
+<p> Now i could download the oh-my-zsh and change over my shell to zsh</p>
+<pre><code>
+$ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+$ chsh -s `which zsh`
+</pre></code>
+<p>
+  Note - Effects take over when you open a new terminal window or tab.
 </p>
      <!--
       <footer>
